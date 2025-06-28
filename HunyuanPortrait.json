@@ -1,25 +1,14 @@
 {
+  "id": "hunyuanportrait",
   "name": "HunyuanPortrait",
-  "version": "1.0",
-  "description": "Install and run HunyuanPortrait by Tencent-Hunyuan",
-  "repository": "https://github.com/Tencent-Hunyuan/HunyuanPortrait.git",
-  "install": {
-    "method": "shell.run",
-    "params": {
-      "message": "git clone https://github.com/Tencent-Hunyuan/HunyuanPortrait.git && cd HunyuanPortrait && pip3 install torch torchvision torchaudio && pip3 install -r requirements.txt",
-      "env": "env"
-    }
-  },
-  "launch": {
-    "method": "shell.run",
-    "params": {
-      "message": "cd HunyuanPortrait && python gradio_app.py",
-      "env": "env"
-    }
-  },
-  "requirements": [
-    "python",
-    "git",
-    "pip"
-  ]
+  "description": "Tencent's HunyuanPortrait Gradio App",
+  "url": "https://github.com/Tencent-Hunyuan/HunyuanPortrait",
+  "install": [
+    "git clone https://github.com/Tencent-Hunyuan/HunyuanPortrait.git",
+    "cd HunyuanPortrait",
+    "pip install torch torchvision torchaudio",
+    "pip install -r requirements.txt"
+  ],
+  "run": "cd HunyuanPortrait && python gradio_app.py",
+  "requirements": ["python", "pip", "git"]
 }
