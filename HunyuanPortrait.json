@@ -10,7 +10,7 @@
       "env": "env"
     }
   },
-  ""launch": {
+  "launch": {
   "method": "shell.run",
   "params": {
     "message": "python gradio_app.py",
