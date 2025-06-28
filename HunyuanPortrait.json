@@ -6,17 +6,17 @@
   "install": {
     "method": "shell.run",
     "params": {
-      "message": "git clone https://github.com/Tencent-Hunyuan/HunyuanPortrait.git . && pip3 install torch torchvision torchaudio && pip3 install -r requirements.txt",
+      "message": "git clone https://github.com/Tencent-Hunyuan/HunyuanPortrait.git && cd HunyuanPortrait && pip3 install torch torchvision torchaudio && pip3 install -r requirements.txt",
       "env": "env"
     }
   },
   "launch": {
-  "method": "shell.run",
-  "params": {
-    "message": "python gradio_app.py",
-    "env": "env"
-  }
-},
+    "method": "shell.run",
+    "params": {
+      "message": "cd HunyuanPortrait && python gradio_app.py",
+      "env": "env"
+    }
+  },
   "requirements": [
     "python",
     "git",
